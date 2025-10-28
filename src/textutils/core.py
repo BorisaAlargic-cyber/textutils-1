@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import re
 
 def capitalize_sentences(text: str) -> str:
@@ -35,3 +36,5 @@ def camel_to_snake(text):
     text = re.sub(r'(?<=[a-z0-9])([A-Z])', r'_\1', text)
     # Convert the whole string to lowercase
     return text.lower()
+=======
+>>>>>>> 2630426c02574a060980575dde21220c557df496
