@@ -21,7 +21,7 @@ def test_text_processing_pipeline():
     counts = c.word_count(reversed_text)  # {"Hello": 2, "world": 1}
 
     # Step 4: Get unique words
-    uniques = c.unique_words(reversed_text)  # {"Hello", "world"}
+    uniques = c.find_unique_words(reversed_text)  # {"Hello", "world"}
 
     # Step 5: Check palindrome behavior
     palindrome_text = "madam"
