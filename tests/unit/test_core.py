@@ -24,5 +24,10 @@ def test_capitalize_sentences_basic():
     expected = "Hello world. This is a test! Is it working?"
     assert c.capitalize_sentences(text) == expected
 
+def test_word_lengths_basic():
+    result = c.word_lengths("Hello world")
+    assert result == {"hello": 5, "world": 5}
+
+
 
 

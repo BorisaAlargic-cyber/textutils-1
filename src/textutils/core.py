@@ -25,3 +25,23 @@ def capitalize_sentences(text: str) -> str:
     
     # Handle any trailing text or spaces
     return " ".join(s.strip() for s in result)
+
+#word length function
+
+def word_lengths(text: str) -> dict[str, int]:
+    """
+    Return a dictionary where each word in the text maps to its length.
+    Punctuation is ignored and words are treated case-insensitively.
+
+    Example:
+        >>> word_lengths("Hello world!")
+        {'hello': 5, 'world': 5}
+    """
+    punctuation = '.,!?;:"()[]{}<>-—\''
+    cleaned = text.lower()
+    for mark in punctuation:
+        cleaned = cleaned.replace(mark, " ")
+
+    words = cleaned.split()
+
+    return {word: len(word) for word in words}
