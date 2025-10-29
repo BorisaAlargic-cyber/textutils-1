@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-def reverse_words(text):
-    return ' '.join(text.split()[::-1])
-=======
 
 
 def is_palindrome(text):
@@ -25,4 +21,6 @@ def average_word_length(text: str) -> float:
     total_length = sum(len(word) for word in words)
     
     return total_length / len(words)
->>>>>>> 912b13ac46d34a588963c46f0ca3a64d213a5159
+
+def reverse_words(text):
+    return ' '.join(text.split()[::-1])
