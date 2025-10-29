@@ -18,3 +18,11 @@ def test_mixed_characters():
 
 def test_numerals_and_symbols():
     assert count_vowels("1234!@#$") == 0
+    
+def test_capitalize_sentences_basic():
+    text = "hello world. this is a test! is it working?"
+    expected = "Hello world. This is a test! Is it working?"
+    assert c.capitalize_sentences(text) == expected
+
+
+
