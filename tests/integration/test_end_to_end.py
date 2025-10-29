@@ -35,4 +35,8 @@ def test_text_processing_pipeline():
     assert counts == {"Hello": 2, "world": 1}
     assert uniques == {"Hello", "world"}
     assert is_pal is True
+<<<<<<< HEAD
     assert is_not_pal is False
+=======
+    assert is_not_pal is False
+>>>>>>> 1ca646f5ee56540f967c8cecfdb42f3d6b13ba24
