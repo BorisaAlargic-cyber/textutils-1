@@ -1,3 +1,17 @@
+
+
+def is_palindrome(text):
+    return text == text[::-1]
+
+
+def word_count(text):
+    text = text.lower()
+    words = text.split()
+    counts = {}
+    for word in words:
+        counts[word] = counts.get(word, 0) + 1
+    return counts
+
 def average_word_length(text: str) -> float:
     words = text.split()
     
