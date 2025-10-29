@@ -45,3 +45,12 @@ def word_lengths(text: str) -> dict[str, int]:
     words = cleaned.split()
 
     return {word: len(word) for word in words}
+
+def is_anagram(a: str, b: str) -> bool:
+    """
+    Checks if two strings are anagrams (case-insensitive, ignores spaces and punctuation).
+    """
+    import re
+    cleaned_a = sorted(re.findall(r"[a-z0-9]", a.lower()))
+    cleaned_b = sorted(re.findall(r"[a-z0-9]", b.lower()))
+    return cleaned_a == cleaned_b

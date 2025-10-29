@@ -29,5 +29,15 @@ def test_word_lengths_basic():
     assert result == {"hello": 5, "world": 5}
 
 
+def test_is_anagram_true():
+    assert is_anagram("listen", "silent")
+    assert is_anagram("Dormitory", "dirty room")
+    assert is_anagram("Astronomer", "Moon starer")
+    assert is_anagram("The eyes", "They see")
+
+def test_is_anagram_false():
+    assert not is_anagram("hello", "world")
+    assert not is_anagram("python", "typhonx")
+    assert not is_anagram("test", "taste")
 
 
